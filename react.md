@@ -360,3 +360,20 @@ export default class LazyImage extends Component {
 
 ```
 
+## react+ts配置别名
+
+> webpack.config.js
+
+```js
+ "@":path.resolve(__dirname,"../src")
+```
+
+> tsconfig.json
+
+```js
+ "baseUrl": ".",
+  "paths": {
+      "@/*":["./src/*"]
+    }
+```
+
